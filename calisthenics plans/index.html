@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calisthenics Levels</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a0033, #001f3f);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #f0f0f0;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: #1c1c1c;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      padding: 30px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .level {
+      text-align: center;
+      padding: 15px;
+      border-radius: 12px;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      text-decoration: none;
+    }
+
+    .level:hover {
+      transform: scale(1.05);
+    }
+
+    .beginner { background-color: #006400; }
+    .intermediate { background-color: #b8860b; }
+    .advanced { background-color: #8b0000; }
+    .elite { background-color: #4b0082; }
+  </style>
+</head>
+<body>
+  <h1>Calisthenics</h1>
+  <div class="card">
+    <a href="beginner.html" class="level beginner">Beginner</a>
+    <a href="intermediate.html" class="level intermediate">Intermediate</a>
+    <a href="advanced.html" class="level advanced">Advanced</a>
+    <a href="elite.html" class="level elite">Elite</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Elite Program with Tips</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1b263b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .buttons button {
+    background: #2b0082; /* بنفسجي غامق */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .buttons button:hover {
+    background: #1e005c;
+  }
+  .day-card {
+    background: #0d1b2a;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+  .day-card.active {
+    max-height: 5000px;
+    opacity: 1;
+    overflow: visible;
+  }
+  .exercise, .extra {
+    background: #2b0082; /* بنفسجي غامق */
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background 0.3s;
+    max-width: 600px;
+  }
+  .exercise:hover, .extra:hover {
+    background: #1e005c;
+  }
+  .exercise-header, .extra-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .exercise-header span, .extra-header span {
+    flex: 1;
+    text-align: left;
+  }
+  .sets, .reps {
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+  }
+  .notes {
+    display: none;
+    background: #0a192f;
+    padding: 10px 20px;
+    text-align: left;
+  }
+  .notes ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Elite Program with Tips</h1>
+
+<div class="buttons">
+  <button onclick="showDay(1)">Day 1</button>
+  <button onclick="showDay(2)">Day 2</button>
+</div>
+
+<!-- Day 1 -->
+<div id="day1" class="day-card active">
+  <h2>Day 1: Push + Light Pull</h2>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Back to Wall Handstand Push Up</span><div class="sets">3-4</div><div class="reps">3-5</div></div>
+    <div class="notes"><ul>
+      <li>If easy → Chest to wall for more difficulty</li>
+      <li>Keep core tight to avoid arching</li>
+      <li>Control descent slowly</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Free Handstand Attempts</span><div class="sets">3-4</div><div class="reps">Attempts</div></div>
+    <div class="notes"><ul>
+      <li>Focus on balance, don't rush</li>
+      <li>Engage shoulders and core</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>High Pull Up (Above Chest)</span><div class="sets">3-4</div><div class="reps">3-5</div></div>
+    <div class="notes"><ul>
+      <li>Explode upwards with control</li>
+      <li>Squeeze scapula at top</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Weighted Dips</span><div class="sets">3-4</div><div class="reps">6-8</div></div>
+    <div class="notes"><ul>
+      <li>Keep shoulders down and back</li>
+      <li>Maintain full range of motion</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Assisted Advanced Tuck Front Lever</span><div class="sets">3-4</div><div class="reps">8-15 sec</div></div>
+    <div class="notes"><ul>
+      <li>Engage core and lats</li>
+      <li>Keep body tight and straight</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Pseudo Planche Push Up</span><div class="sets">3-4</div><div class="reps">5-8</div></div>
+    <div class="notes"><ul>
+      <li>Lean forward as much as possible</li>
+      <li>Keep shoulders protracted and depressed</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Tuck V-Sit</span><div class="sets">3-4</div><div class="reps">8-12 sec</div></div>
+    <div class="notes"><ul>
+      <li>Push hips up high</li>
+      <li>Lean back to engage abs</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Strict Toes to Bar</span><div class="sets">3-4</div><div class="reps">8-10</div></div>
+    <div class="notes"><ul>
+      <li>No swinging, control the movement</li>
+      <li>If too hard, do leg raises instead</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Weighted Hollow Body Hold + Superman Hold</span><div class="sets">3-4</div><div class="reps">Hold</div></div>
+    <div class="notes"><ul>
+      <li>Use ankle weights or hold dumbbells</li>
+      <li>Keep core tight and body aligned</li>
+    </ul></div>
+  </div>
+</div>
+
+<!-- Day 2 -->
+<div id="day2" class="day-card">
+  <h2>Day 2: Pull + Light Push</h2>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Muscle Up</span><div class="sets">3-4</div><div class="reps">4-6</div></div>
+    <div class="notes"><ul>
+      <li>If can't do 2 reps, use band assistance</li>
+      <li>Explode through transition</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Full Back Lever Hold</span><div class="sets">3-4</div><div class="reps">8-12 sec</div></div>
+    <div class="notes"><ul>
+      <li>Engage lats and core tightly</li>
+      <li>If hard, try half lay or negatives</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Weighted Pull Up</span><div class="sets">3-4</div><div class="reps">5-8</div></div>
+    <div class="notes"><ul>
+      <li>Keep scapula retracted</li>
+      <li>Control the negative phase</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Bent Arm Press to Handstand on Wall</span><div class="sets">3-4</div><div class="reps">2-3</div></div>
+    <div class="notes"><ul>
+      <li>Maintain tight core</li>
+      <li>Use controlled movement</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Narrow Pull Up</span><div class="sets">3-4</div><div class="reps">8-12</div></div>
+    <div class="notes"><ul>
+      <li>Focus on full range of motion</li>
+      <li>Keep elbows close</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Weighted Australian Pull Up Lvl 4</span><div class="sets">3-4</div><div class="reps">10-15</div></div>
+    <div class="notes"><ul>
+      <li>Elevate feet and add weights on chest</li>
+      <li>Try different grips: narrow, wide, supinated</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Dragon Flag Raises</span><div class="sets">3-5</div><div class="reps">-</div></div>
+    <div class="notes"><ul>
+      <li>Control descent slowly</li>
+      <li>Keep core tight throughout</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Seated Leg Raises</span><div class="sets">3-4</div><div class="reps">Max</div></div>
+    <div class="notes"><ul>
+      <li>Hands placed far forward</li>
+      <li>Try straddle variation for difficulty</li>
+      <li>Use hands, not fingertips, for support</li>
+    </ul></div>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header"><span>Hollow Body Hold + Superman Hold</span><div class="sets">3-4</div><div class="reps">Hold</div></div>
+    <div class="notes"><ul>
+      <li>Maintain tight core</li>
+      <li>Breathe steadily throughout</li>
+    </ul></div>
+  </div>
+
+  <div class="extra">
+    <div class="extra-header"><span>Extra Exercise: Inverted Deadlift Hold</span><div class="sets">-</div><div class="reps">-</div></div>
+    <div class="notes"><ul>
+      <li>Engage back and hamstrings</li>
+      <li>Keep body aligned and tight</li>
+    </ul></div>
+  </div>
+</div>
+
+<script>
+function showDay(day) {
+  document.getElementById('day1').classList.toggle('active', day === 1);
+  document.getElementById('day2').classList.toggle('active', day === 2);
+}
+
+document.querySelectorAll('.exercise-header, .extra-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const notes = header.parentElement.querySelector('.notes');
+    if (notes) {
+      notes.style.display = notes.style.display === 'block' ? 'none' : 'block';
+    }
+  });
+});
+
+showDay(1);
+</script>
+
+</body>
+</html>
